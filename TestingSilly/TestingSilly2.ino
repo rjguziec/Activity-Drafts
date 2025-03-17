@@ -37,7 +37,7 @@ void setup() {
   TCCR1B = 0x12; // prescaler 8
   TCCR1C = 0x00; // WTF is this register???????
   
-  TIMSK1 = 0x04; // good  ?
+  TIMSK1 = 0x00; // good, interrupts disabled :D
 
   OCR1A = 20000; // Writing to our 16 bit register in decimal value!
   OCR1B = 10000;  // Funny number magic man 
